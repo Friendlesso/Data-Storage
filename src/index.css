@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
+
+
+:root {
+  --blue-950: hsl(229, 57%, 11%);
+  --blue-850: hsl(228, 56%, 26%);
+
+  --from: hsl(6, 100%, 80%);
+  --to: hsl(335, 100%, 65%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background: url('./assets/images/bg-desktop.png') bottom/contain no-repeat;
+}
+
+@media (max-width: 840px) {
+  body {
+    background: url('./assets/images/bg-mobile.png') bottom/cover no-repeat;
+  }
+}
